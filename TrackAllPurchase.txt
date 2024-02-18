@@ -1,0 +1,48 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Purchase Page</title>
+  </head>
+<body>
+  <header>
+    </header>
+
+  <main>
+    <h1>Purchase Details</h1>
+
+    <section class="product-details">
+      <img src="product-image.jpg" alt="Product image">
+      <p class="product-name">Product Name</p>
+      <p class="product-description">Product description...</p>
+      <p class="price">Price: $XX.XX</p>
+    </section>
+
+    <section class="customer-form">
+      <h2>Billing & Shipping Information</h2>
+      <form action="/purchase" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" id="quantity" min="1" required>
+
+        <button type="submit">Purchase</button>
+      </form>
+    </section>
+
+    <section class="payment-info">
+      </section>
+
+    </main>
+
+  <footer>
+    </footer>
+</body>
+</html>
